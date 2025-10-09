@@ -27,6 +27,8 @@ export function Board({ xIsNext, squares, onPlay }) {
 
   if (winner) {
     status = `Winner: ${winner}`;
+  } else if (squares.every((square) => square !== null)) {
+    status = "No Winner - It's a Draw!";
   } else {
     status = "Next Player is: " + (xIsNext ? "X" : "O");
   }
@@ -89,8 +91,7 @@ export default function Game() {
       description = `Go to start the Game`;
     }
     return (
-      <li key={move}
-        className="bg-gray-700 text-white mb-1 p-1 rounded-sm">
+      <li key={move} className="bg-gray-700 text-white mb-1 p-1 rounded-sm">
         <button onClick={() => jumpTo(move)}>{description}</button>
       </li>
     );
