@@ -1,0 +1,31 @@
+{
+  "hash": "62360a2a",
+  "configHash": "4719f956",
+  "lockfileHash": "ba34e7eb",
+  "browserHash": "00fb27e8",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "e49b6018",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "4bbc4f04",
+      "needsInterop": true
+    },
+    "use-immer": {
+      "src": "../../node_modules/use-immer/dist/use-immer.module.mjs",
+      "file": "use-immer.js",
+      "fileHash": "f2d62fa3",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-OBOR3357": {
+      "file": "chunk-OBOR3357.js"
+    }
+  }
+}
