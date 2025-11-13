@@ -1,27 +1,19 @@
 import React from "react";
 import Icon from "./ui/Icon";
+import Link from "./ui/Link";
 
 export default function Header() {
   return (
     <header className="border-b border-gray-200 py-4 px-4 md:px-8">
       <div className="container mx-auto flex items-center justify-between">
-        <a href="#" className="text-2xl font-bold">
+        <Link to="#" className="text-2xl font-bold" isNavItem={false}>
           LWS.SHOP
-        </a>
-
+        </Link>
         <nav className="hidden md:flex space-x-6">
-          <a href="#" className="hover:text-gray-500 transition-colors">
-            Shop
-          </a>
-          <a href="#" className="hover:text-gray-500 transition-colors">
-            On Sale
-          </a>
-          <a href="#" className="hover:text-gray-500 transition-colors">
-            New Arrivals
-          </a>
-          <a href="#" className="hover:text-gray-500 transition-colors">
-            Brands
-          </a>
+          <Link to="#">Shop</Link>
+          <Link to="#">On Sale</Link>
+          <Link to="#">New Arrivals</Link>
+          <Link to="#">Brands</Link>
         </nav>
 
         <div className="flex items-center space-x-4">
@@ -36,11 +28,11 @@ export default function Header() {
             </span>
           </div>
 
-          <a href="#" className="hover:text-gray-500 transition-colors">
+          <Link to="#">
             <Icon className="h-6 w-6" name="cart" />
-          </a>
+          </Link>
 
-          <a href="#" className="hover:text-gray-500 transition-colors">
+          <a href="#">
             <Icon className="h-6 w-6" name="men" />
           </a>
         </div>
