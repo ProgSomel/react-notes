@@ -1,12 +1,12 @@
-import { useRef, useState } from 'react';
+import { useRef, useState } from "react";
 
 export default function Counter() {
-  const [text, setText] = useState('');
+  const [text, setText] = useState("");
   const ref = useRef(text);
 
   function handleSend() {
     setTimeout(() => {
-      alert('Sending: ' + ref.current);
+      alert("Sending: " + ref.current);
     }, 3000);
   }
 
@@ -14,15 +14,12 @@ export default function Counter() {
     <>
       <input
         value={text}
-        onChange={e => {
+        onChange={(e) => {
           setText(e.target.value);
           ref.current = e.target.value;
         }}
       />
-      <button
-        onClick={handleSend}>
-        Send
-      </button>
+      <button onClick={handleSend}>Send</button>
     </>
   );
 }
