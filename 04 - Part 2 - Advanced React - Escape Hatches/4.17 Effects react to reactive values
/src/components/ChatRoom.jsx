@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import createConnection from "../utils/connection";
 
-const serverURL = "https://localhost:1234";
+// const serverURL = "https://localhost:1234";
 
 export default function ChatRoom({ roomId }) {
   useEffect(() => {
