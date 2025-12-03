@@ -1,0 +1,14 @@
+.product {
+  padding: 10px;
+  border: 1px solid lightslategray;
+  border-radius: 5px;
+  background-color: antiquewhite;
+}
+
+.notification {
+  margin-top: 20px;
+  background-color: aquamarine;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
